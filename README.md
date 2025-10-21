@@ -8,7 +8,7 @@ This branch contains the Bluetooth firmware for AALBand 2.0 devices.
   - Recommended: Click "Code" > "Download ZIP" on GitHub, then extract the files.
   - Or: Use `git clone` if you prefer.
   ```bash 
-  git clone https://github.com/BioxGroup/AALBand-Firmware-Flasher
+  git clone --branch 2.0-Bluetooth --single-branch https://github.com/BioxGroup/AALBand-Firmware-Flasher
   ```
 2. **Connect your AALBand device**
   - Use a micro USB cable to connect the device to your Windows computer.

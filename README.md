@@ -1,6 +1,6 @@
-## AALBand Firmware 2.0-Bluetooth Branch
+## AALBand Firmware 2.0-WiFi Branch
 
-This branch contains the Bluetooth firmware for AALBand 2.0 devices.
+This branch contains the WiFi firmware for AALBand 2.0 devices.
 
 ### How to flash your device
 

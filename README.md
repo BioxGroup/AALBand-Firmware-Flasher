@@ -1,20 +1,40 @@
-# AALBand-Firmware-Flasher
+## AALBand Firmware 1.0-Bluetooth Branch
 
-This repository folder is intended to host firmware and flashing helpers for AALBand devices. It's structured so customers can find device-specific firmware branches and download or update firmware safely.
+This branch contains the Bluetooth firmware for AALBand 1.0 devices.
 
-## Repository layout
+### How to flash your device
 
-- `main`          (branch): It is created to help you find and guide the appropriate firmware version for your device.
-- `1.0-Bluetooth` (branch): Bluetooth firmware flasher for AALband 1.0.
-- `2.0-Bluetooth` (branch): Bluetooth firmware flasher for AALband 2.0.
-- `2.0-WiFi`      (branch): WiFi firmware flasher for AALband 2.0.
+1. **Download this branch**
+  - Recommended: Click "Code" > "Download ZIP" on GitHub, then extract the files.
+  - Or: Use `git clone` if you prefer.
+  ```bash 
+  git clone https://github.com/BioxGroup/AALBand-Firmware-Flasher
+  ```
+2. **Connect your AALBand device**
+  - Use a micro USB cable to connect the device to your Windows computer.
 
-## How to find your firmware branch
+3. **Install the CP210x USB driver (required for Windows 11)**
+  - Download the official driver from Silicon Labs:
+    [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+  - Extract the ZIP file.
+  - Right-click and install `silabser.inf` (or run the installer in the package).
+  - If prompted, allow driver installation.
 
-1. Identify your device model and hardware variant (look on the device label or packaging).
-2. Match it to the firmware branch name above.
-3. On GitHub, use the branch selector to switch to the target firmware branch, or download a ZIP of that branch.
-4. Flashing instructions are explained in branches.
+  > **Note:** Windows security requires user consent for driver installation. Always download and install the driver manually from the official source above.
+
+4. **Open `flashtool.exe`**
+  - Run the provided `flashtool.exe` program.
+  - The program will automatically detect your device and flash the firmware.
+
+5. **Wait for completion**
+  - The tool will notify you when flashing is complete.
+
+---
+
+If you have any issues, check:
+- USB cable and port
+- Driver installation (Device Manager should show CP210x device)
+- Antivirus/firewall settings
 
 ## Contact & support
 
